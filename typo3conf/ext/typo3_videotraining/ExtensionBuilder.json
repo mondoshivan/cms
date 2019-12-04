@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "templates",
+            "custom_category": "",
+            "dependsOn": "typo3 => 9.5.0-9.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "9.5.0-9.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "typo3_videotraining",
+        "name": "Videotraining",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "",
+                "name": "Oliver Schmidt",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Oschmidt"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2019-11-30 08:10",
+        "extension_builder_version": "9.10.2",
+        "be_user": "Oliver Schmidt (1)"
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5e8d1c0e-8cd8-4f0f-a382-851dfc9e7f92" name="lyra.et-inf.fho-emden.de" url="http://lyra.et-inf.fho-emden.de">
+        <fileTransfer host="lyra.et-inf.fho-emden.de" port="14092" rootFolder="/var/www/html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="14092" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

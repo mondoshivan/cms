@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="lyra.et-inf.fho-emden.de" autoUploadExternalChanges="true" showNewOnSourceInSync="false">
+    <serverData>
+      <paths name="lyra.et-inf.fho-emden.de">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/fileadmin" />
+            <excludedPath path="/typo3" />
+            <excludedPath path="/typo3temp" />
+            <excludedPath path="/uploads" />
+            <excludedPath path="/typo3conf/autoload" />
+            <excludedPath path="/typo3conf/ext/extension_builder" />
+            <excludedPath path="/typo3conf/l10n" />
+            <excludedPath local="true" path="$PROJECT_DIR$/Typo3 Videotutorial.iml" />
+            <excludedPath path="/typo3_src" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

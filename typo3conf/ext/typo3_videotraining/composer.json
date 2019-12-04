@@ -1,0 +1,28 @@
+{
+    "name": "oschmidt/typo3-videotraining",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Oliver Schmidt",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oschmidt\\Typo3Videotraining\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oschmidt\\Typo3Videotraining\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "oschmidt/typo3-videotraining": "self.version",
+        "typo3-ter/typo3-videotraining": "self.version"
+    }
+}
