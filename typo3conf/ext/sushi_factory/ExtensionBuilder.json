@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Template Extension f\u00fcr die Sushi Factory.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 9.5.0-9.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "9.5.0-9.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "sushi_factory",
+        "name": "Sushi Factory",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "",
+                "name": "Oliver Schmidt",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "OSchmidt"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2019-12-04 07:50",
+        "extension_builder_version": "9.10.2",
+        "be_user": "Oliver Schmidt (1)"
+    }
+}

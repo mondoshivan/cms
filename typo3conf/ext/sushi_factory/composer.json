@@ -1,0 +1,28 @@
+{
+    "name": "oschmidt/sushi-factory",
+    "type": "typo3-cms-extension",
+    "description": "Template Extension f\u00fcr die Sushi Factory.",
+    "authors": [
+        {
+            "name": "Oliver Schmidt",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OSchmidt\\SushiFactory\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OSchmidt\\SushiFactory\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "oschmidt/sushi-factory": "self.version",
+        "typo3-ter/sushi-factory": "self.version"
+    }
+}
