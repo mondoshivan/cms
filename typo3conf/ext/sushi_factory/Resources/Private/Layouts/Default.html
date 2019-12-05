@@ -1,36 +1,17 @@
-<div class="pageheader container">
-    <div class="row">
-        <div class="col-sm-4">
-            <!-- Partial Sprachumschaltung -->
-            <f:render partial="LanguageMenu" />
+<div class="jumbotron">
+    <div class="container">
+        <div class="page-header">
+            <h1>Sushi Factory</h1>
         </div>
-        <div class="col-sm-8">
-            <f:render partial="SearchForm" />
-        </div>
+        <p>Be inspired</p>
     </div>
 </div>
-<div class="mainnav">
-    <nav class="main-nav container" role="navigation">
-
-        <!-- Mobile menu toggle button (hamburger/x icon) -->
-        <input id="main-menu-state" type="checkbox"/>
-        <label class="main-menu-btn" for="main-menu-state">
-            <span class="main-menu-btn-icon"></span> Toggle main menu visibility
-        </label>
-
-        <h2 class="nav-brand"><a href="#">Videotraining TYPO3 8 LTS</a></h2>
-
-        <f:render partial="MainNavigation" />
-    </nav>
-</div><!-- Ende mainnav -->
-
-<f:render section="Jumbotron"/>
-
-<f:render section="Multicolumn"/>
-
-<!-- Beginn Footer Bereich -->
-<hr>
-
-<f:render partial="Footer" />
-
-</div> <!-- Ende Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">.col-sm-8</div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+</div>
+<div class="container">
+    <f:render partial="Footer" />
+</div>

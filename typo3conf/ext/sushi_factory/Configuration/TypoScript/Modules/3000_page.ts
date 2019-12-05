@@ -19,12 +19,16 @@ page.meta {
 page.shortcutIcon = EXT:sushi_factory/Resources/Public/icons/favicon.ico
 
 page.includeCSS {
-    10 = EXT:sushi_factory/Resources/Public/css/main.css
+    10 = https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css
+    20 = EXT:sushi_factory/Resources/Public/css/main.css
 }
 
 page.includeJSFooterlibs {
-    10 = EXT:sushi_factory/Resources/Public/javascript/jquery-3.1.1.min.js
+    10 = https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
     10.disableCompression = 1
+
+    20 = https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js
+    20.disableCompression = 1
 }
 
 page.includeJSFooter {
