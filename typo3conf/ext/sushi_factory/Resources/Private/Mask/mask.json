@@ -1,0 +1,59 @@
+{
+    "pages": {
+        "elements": {
+            "rezept": {
+                "columns": [
+                    "tx_mask_sushi_factory_template_rezept_header"
+                ],
+                "description": "dummy description",
+                "key": "rezept",
+                "label": "Rezept",
+                "labels": [
+                    "Rezept Titel"
+                ],
+                "shortLabel": "dummy shortitle"
+            }
+        },
+        "sql": {
+            "tx_mask_sushi_factory_template_rezept_header": {
+                "pages": {
+                    "tx_mask_sushi_factory_template_rezept_header": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_sushi_factory_template_rezept_header": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "sushi_factory_template_rezept_header",
+                "l10n_mode": ""
+            }
+        }
+    },
+    "tt_content": {
+        "elements": {
+            "sushi_factory_rezept1": {
+                "color": "#000000",
+                "columns": [
+                    "header"
+                ],
+                "description": "Rezept mit Bildern, einer Zutatentabelle und einer Beschreibung",
+                "icon": "",
+                "key": "sushi_factory_rezept1",
+                "label": "Sushi Factory Rezept 1",
+                "labels": [
+                    "Rezept Titel"
+                ],
+                "shortLabel": ""
+            }
+        }
+    }
+}

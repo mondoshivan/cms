@@ -1,0 +1,22 @@
+{
+    "tt_content": {
+        "elements": {
+            "sushi_factory_rezept2": {
+                "color": "#000000",
+                "columns": [
+                    "header"
+                ],
+                "description": "Rezept mit Bildern, einer Zutatentabelle und einer Beschreibung",
+                "icon": "",
+                "key": "sushi_factory_rezept2",
+                "label": "Sushi Factory Rezept 2",
+                "labels": [
+                    "Rezept Titel"
+                ],
+                "shortLabel": "Sushi Factory Rezept"
+            }
+        },
+        "sql": [],
+        "tca": []
+    }
+}
