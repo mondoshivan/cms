@@ -1,0 +1,16 @@
+<f:render partial="MainNavigation" arguments="{_all}"/>
+
+<f:if condition="{backendLayout}=='rezept'">
+    <f:render section="rezept" arguments="{_all}"/>
+</f:if>
+
+<f:if condition="{backendLayout}=='3spalten'">
+    <f:render section="3spalten" arguments="{_all}"/>
+</f:if>
+
+<f:if condition="{backendLayout}=='1spalte'">
+    <f:render section="1spalte" arguments="{_all}"/>
+</f:if>
+
+
+<f:render partial="Footer" />

@@ -1,0 +1,9 @@
+
+## Umfangreiche Konfiguration mit vielen Schaltflächen
+RTE.default.preset = vt8_preset
+
+## Standardsprache für das Backend
+mod.SHARED {
+    defaultLanguageFlag = de
+    defaultLanguageLabel = deutsch
+}

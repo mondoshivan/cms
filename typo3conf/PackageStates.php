@@ -98,6 +98,12 @@ return [
         'extension_builder' => [
             'packagePath' => 'typo3conf/ext/extension_builder/',
         ],
+        'mask' => [
+            'packagePath' => 'typo3conf/ext/mask/',
+        ],
+        'sushi_factory' => [
+            'packagePath' => 'typo3conf/ext/sushi_factory/',
+        ],
         'typo3_videotraining' => [
             'packagePath' => 'typo3conf/ext/typo3_videotraining/',
         ],

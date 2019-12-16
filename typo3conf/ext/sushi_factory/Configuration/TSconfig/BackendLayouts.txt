@@ -1,0 +1,81 @@
+mod.web_layout.BackendLayouts {
+  3spalten {
+    title = 3Spalten
+    icon = EXT:sushi_factory/Resources/Public/icons/BackendLayouts/3spalten.png
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Jumbotron
+                colPos = 1
+              }
+              2 {
+                name = Tabelle
+                colPos = 2
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Beschreibung
+                colspan = 2
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mod.web_layout.BackendLayouts {
+  rezept {
+    title = Rezept
+    icon = EXT:sushi_factory/Resources/Public/icons/BackendLayouts/3spalten.png
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mod.web_layout.BackendLayouts {
+  1spalte {
+    title = 1Spalte
+    icon = EXT:sushi_factory/Resources/Public/icons/BackendLayouts/1spalte.png
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
