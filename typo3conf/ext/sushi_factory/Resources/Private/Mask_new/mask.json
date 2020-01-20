@@ -1,22 +1,242 @@
 {
+    "sys_file_reference": {
+        "sql": {
+            "tx_mask_sushi_factory_rezept_image": {
+                "sys_file_reference": {
+                    "tx_mask_sushi_factory_rezept_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        }
+    },
     "tt_content": {
         "elements": {
             "sushi_factory_rezept2": {
                 "color": "#000000",
-                "columns": [
-                    "header"
-                ],
+                "columns": {
+                    "0": "header",
+                    "1": "subheader",
+                    "2": "tx_mask_sushi_factory_rezept_images",
+                    "6": "tx_mask_sushi_factory_rezept_zutaten",
+                    "9": "tx_mask_sushi_factory_rezept_beschreibung"
+                },
                 "description": "Rezept mit Bildern, einer Zutatentabelle und einer Beschreibung",
                 "icon": "",
                 "key": "sushi_factory_rezept2",
                 "label": "Sushi Factory Rezept 2",
-                "labels": [
-                    "Rezept Titel"
-                ],
+                "labels": {
+                    "0": "Rezept Titel",
+                    "1": "Rezept Subtitel",
+                    "2": "",
+                    "6": "Zutaten",
+                    "9": "Rezept Beschreibung"
+                },
                 "shortLabel": "Sushi Factory Rezept"
             }
         },
-        "sql": [],
-        "tca": []
+        "sql": {
+            "tx_mask_sushi_factory_rezept_beschreibung": {
+                "tt_content": {
+                    "tx_mask_sushi_factory_rezept_beschreibung": "mediumtext"
+                }
+            },
+            "tx_mask_sushi_factory_rezept_images": {
+                "tt_content": {
+                    "tx_mask_sushi_factory_rezept_images": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_sushi_factory_rezept_zutaten": {
+                "tt_content": {
+                    "tx_mask_sushi_factory_rezept_zutaten": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_sushi_factory_rezept_beschreibung": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "eval": "",
+                    "format": "",
+                    "max": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "sushi_factory_rezept_beschreibung",
+                "l10n_mode": ""
+            },
+            "tx_mask_sushi_factory_rezept_images": {
+                "config": {
+                    "appearance": {
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "levelLinksPosition": "top",
+                        "newRecordLinkTitle": ""
+                    },
+                    "foreign_field": "parentid",
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_table_field": "parenttable",
+                    "maxitems": "5",
+                    "minitems": "1",
+                    "type": "inline"
+                },
+                "exclude": "1",
+                "inlineIcon": "",
+                "inlineLabel": "",
+                "key": "sushi_factory_rezept_images",
+                "l10n_mode": ""
+            },
+            "tx_mask_sushi_factory_rezept_zutaten": {
+                "config": {
+                    "appearance": {
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "levelLinksPosition": "top",
+                        "newRecordLinkTitle": ""
+                    },
+                    "foreign_field": "parentid",
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_table_field": "parenttable",
+                    "maxitems": "",
+                    "minitems": "",
+                    "type": "inline"
+                },
+                "exclude": "1",
+                "inlineIcon": "",
+                "inlineLabel": "",
+                "key": "sushi_factory_rezept_zutaten",
+                "l10n_mode": ""
+            }
+        }
+    },
+    "tx_mask_sushi_factory_rezept_images": {
+        "sql": {
+            "tx_mask_sushi_factory_rezept_caption": {
+                "tx_mask_sushi_factory_rezept_images": {
+                    "tx_mask_sushi_factory_rezept_caption": "tinytext"
+                }
+            },
+            "tx_mask_sushi_factory_rezept_caption_sub": {
+                "tx_mask_sushi_factory_rezept_images": {
+                    "tx_mask_sushi_factory_rezept_caption_sub": "tinytext"
+                }
+            },
+            "tx_mask_sushi_factory_rezept_image": {
+                "tx_mask_sushi_factory_rezept_images": {
+                    "tx_mask_sushi_factory_rezept_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_sushi_factory_rezept_caption": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_sushi_factory_rezept_images",
+                "key": "sushi_factory_rezept_caption",
+                "l10n_mode": "",
+                "label": "Rezept Bild Unterschrift Header",
+                "order": 4
+            },
+            "tx_mask_sushi_factory_rezept_caption_sub": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_sushi_factory_rezept_images",
+                "key": "sushi_factory_rezept_caption_sub",
+                "l10n_mode": "",
+                "label": "Rezept Bild Unterschrift Sub",
+                "order": 5
+            },
+            "tx_mask_sushi_factory_rezept_image": {
+                "config": {
+                    "filter": [
+                        {
+                            "parameters": {
+                                "allowedFileExtensions": ""
+                            }
+                        }
+                    ],
+                    "maxitems": "",
+                    "minitems": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_sushi_factory_rezept_images",
+                "key": "sushi_factory_rezept_image",
+                "l10n_mode": "",
+                "label": "Rezept Bild",
+                "options": "file",
+                "order": 3
+            }
+        }
+    },
+    "tx_mask_sushi_factory_rezept_zutaten": {
+        "sql": {
+            "tx_mask_sushi_factory_rezept_menge": {
+                "tx_mask_sushi_factory_rezept_zutaten": {
+                    "tx_mask_sushi_factory_rezept_menge": "tinytext"
+                }
+            },
+            "tx_mask_sushi_factory_rezept_zutat": {
+                "tx_mask_sushi_factory_rezept_zutaten": {
+                    "tx_mask_sushi_factory_rezept_zutat": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_sushi_factory_rezept_menge": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_sushi_factory_rezept_zutaten",
+                "key": "sushi_factory_rezept_menge",
+                "l10n_mode": "",
+                "label": "Menge",
+                "order": 8
+            },
+            "tx_mask_sushi_factory_rezept_zutat": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_sushi_factory_rezept_zutaten",
+                "key": "sushi_factory_rezept_zutat",
+                "l10n_mode": "",
+                "label": "Zutat",
+                "order": 7
+            }
+        }
     }
 }

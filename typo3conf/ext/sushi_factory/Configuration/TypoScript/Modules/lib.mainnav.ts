@@ -3,7 +3,6 @@ page.10.marks.UNAME.data = TSFE:fe_user|user|username
 
 lib.mainnav = HMENU
 lib.mainnav {
-    wrap = <ul class="nav navbar-nav navbar-right">|</ul>
 
     1 = TMENU
     1 {
@@ -13,7 +12,6 @@ lib.mainnav {
             wrapItemAndSub = <li>|</li>
             stdWrap.htmlSpecialChars = 1
             ATagTitle.field = description // subtitle // title
-
         }
 
         IFSUB = 1
@@ -25,6 +23,8 @@ lib.mainnav {
             ATagParams = class="dropdown-toggle" data-toggle="dropdown"
         }
     }
+
+    1.wrap = <ul class="nav navbar-nav navbar-right dropdown">|</ul>
 
     2 < .1
     2.wrap = <ul class="dropdown-menu">|</ul>

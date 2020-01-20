@@ -42,29 +42,52 @@ page.10 {
     file = EXT:sushi_factory/Resources/Private/Templates/Default.html
 
     variables {
-#        content0 = CONTENT
-#        content0 {
-#            table = tt_content
-#            select.where = colPos = 0
-#            select.orderBy = sorting
-#        }
-#
-#        content1 < .content0
-#        content1.select.where = colPos = 1
+        content0 = CONTENT
+        content0 {
+            table = tt_content
+            select.where = colPos = 0
+            select.orderBy = sorting
+        }
+
+        content1 < .content0
+        content1.select.where = colPos = 1
+
+        content2 < .content0
+        content2.select.where = colPos = 2
+
+        content3 < .content0
+        content3.select.where = colPos = 3
+
+        content4 < .content0
+        content4.select.where = colPos = 4
+
+        content5 < .content0
+        content5.select.where = colPos = 5
+
+        content6 < .content0
+        content6.select.where = colPos = 6
+
+        content7 < .content0
+        content7.select.where = colPos = 7
 
         backendLayout = CASE
         backendLayout {
             key.data = pagelayout
 
             pagets__rezept = TEXT
-            pagets__rezept.value = rezept
+            pagets__rezept.value = Rezept
 
-            pagets__3spalten = TEXT
-            pagets__3spalten.value = 3spalten
+            pagets__typselektion_4spalten = TEXT
+            pagets__typselektion_4spalten.value = TypSelektion4Spalten
+
+            pagets__typselektion_3spalten = TEXT
+            pagets__typselektion_3spalten.value = TypSelektion3Spalten
+
+            pagets__rezeptliste = TEXT
+            pagets__rezeptliste.value = RezeptListe
 
             pagets__1spalte = TEXT
-            pagets__1spalte.value = 1spalte
-
+            pagets__1spalte.value = 1Spalte
         }
 
         siteTitle = TEXT
@@ -76,4 +99,3 @@ page.10 {
         }
     }
 }
-
