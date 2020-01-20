@@ -1,0 +1,25 @@
+
+<f:render partial="MainNavigation" arguments="{_all}"/>
+
+<f:if condition="{backendLayout}=='TypSelektion4Spalten'">
+    <f:render section="TypSelektion4Spalten" arguments="{_all}"/>
+</f:if>
+
+<f:if condition="{backendLayout}=='TypSelektion3Spalten'">
+    <f:render section="TypSelektion3Spalten" arguments="{_all}"/>
+</f:if>
+
+<f:if condition="{backendLayout}=='Rezept'">
+    <f:render section="Rezept" arguments="{_all}"/>
+</f:if>
+
+<f:if condition="{backendLayout}=='RezeptListe'">
+    <f:render section="RezeptListe" arguments="{_all}"/>
+</f:if>
+
+<f:if condition="{backendLayout}=='1Spalte'">
+    <f:render section="1Spalte" arguments="{_all}"/>
+</f:if>
+
+
+<f:render partial="Footer" />
