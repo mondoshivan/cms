@@ -42,6 +42,13 @@ page.10 {
     file = EXT:sushi_factory/Resources/Private/Templates/Default.html
 
     variables {
+
+        sub_pages = CONTENT
+        sub_pages {
+            table = pages
+            select.pidInList.field = uid
+        }
+
         content0 = CONTENT
         content0 {
             table = tt_content
